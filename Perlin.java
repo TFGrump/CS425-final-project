@@ -8,8 +8,7 @@ public class Perlin {
    int width, height;
    double cell_w, cell_h;
 
-   public Perlin(int pWidth, int pHeight, int width, int height) {
-      
+   public Perlin(int pWidth, int pHeight, int width, int height, long seed) {
       this.pWidth = pWidth;
       this.pHeight = pHeight;
       this.width = width;
@@ -18,7 +17,7 @@ public class Perlin {
 	   this.cell_h = height / (double)(pHeight - 1); // The height of a cell
       
       vGrid = new Vector[pWidth][pHeight];
-      ran = new Random();
+      ran = new Random(seed);
       for (int i = 0; i < pWidth; i++) {
          for (int j = 0; j < pHeight; j++) {
             vGrid[i][j] = getRandomVector(2);
@@ -130,7 +129,7 @@ public class Perlin {
    }
    
    public static void main(String[] args) {
-      Perlin perlin = new Perlin(3, 3, 5, 5);
+      Perlin perlin = new Perlin(3, 3, 5, 5, 0);
       for (int i = 0; i < 5; i++) {
          for (int j = 0; j < 5; j++) {
             System.out.print("[" + perlin.getValueAt(i, j) + "] ");

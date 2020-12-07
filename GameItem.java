@@ -1,6 +1,8 @@
 public abstract class GameItem {
 
-      private int strengthMod;
+   String name;
+
+   private int strengthMod;
    private int perceptionMod;
    private int enduranceMod;
    private int charismaMod;
