@@ -1,5 +1,5 @@
-"The Thompson 1928" (Machinegun) 	 #range damage=2,  accuarcy=0.5,  firerate=5, range=40, mag=20
-"Smith and Wesson Model 19" (Handcannon) #range damage=10, accuarcy=0.25, firerate=1, range=30, mag=6
-"Colt M1911A1" (Pistol)         	 #range damage=5,  accuarcy=0.5,  firerate=2, range=40, mag=12
-"Remington Model 870" (Shotgun) 	 #range damage=15, accuarcy=0.25, firerate=1, range=10, mag=6
-"Molotov Cocktail" (Molotov)    	 #aoe   damage=10, accuarcy=0.75, firerate=3, range=5,  mag=1
+"The Thompson 1928" (Machinegun) 	 #range damage=2,  accuracy=0.5,  firerate=5, range=40, mag=20
+"Smith and Wesson Model 19" (Handcannon) #range damage=10, accuracy=0.25, firerate=1, range=30, mag=6
+"Colt M1911A1" (Pistol)         	 #range damage=5,  accuracy=0.5,  firerate=2, range=40, mag=12
+"Remington Model 870" (Shotgun) 	 #range damage=15, accuracy=0.25, firerate=1, range=10, mag=6
+"Molotov Cocktail" (Molotov)    	 #aoe   damage=10, accuracy=0.75, firerate=3, range=5,  mag=1
