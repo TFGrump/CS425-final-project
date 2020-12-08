@@ -1,0 +1,16 @@
+"name of the weapon"
+
+(ingame alias)
+
+#tag
+
+damage="the damage dealt"
+
+accuarcy="the chance to hit"
+
+#range
+firerate="the number of chances to hit"
+#aoe
+firerate="the number of turns the aoe lasts"
+
+range="the effective range of the weapon"

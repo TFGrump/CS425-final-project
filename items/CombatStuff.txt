@@ -1,0 +1,5 @@
+input: two array lists of people
+
+Use special stats for something.
+
+output: some kind of game event
