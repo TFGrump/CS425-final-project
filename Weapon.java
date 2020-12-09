@@ -29,19 +29,19 @@ public class Weapon extends GameItem {
 	
 	//getters
 	public float getDamage() {
-		return damage;
+		return this.damage;
 	}
 	public float getAccuracy() {
-		return accuracy;
+		return this.accuracy;
 	}
 	public float getFirerate() {
-		return firerate;
+		return this.firerate;
 	}
 	public int getMag() {
-		return mag;
+		return this.mag;
 	}
 	public int getRange() {
-		return range;
+		return this.range;
 	}	
 	
 
