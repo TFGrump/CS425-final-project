@@ -2,7 +2,7 @@ public class CommandQuit extends Command {
    
     // Returns true if this string would be a valid trigger for this command 
    public boolean isTrigger(String input) {
-      return input.equalsIgnoreCase(input);
+      return input.equalsIgnoreCase("quit");
    }
     // Code to be called when this command is executed
    public void execute() {
