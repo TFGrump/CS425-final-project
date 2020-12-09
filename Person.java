@@ -43,6 +43,8 @@ public abstract class Person {
    public String getLastName() { return lastName; }
    public boolean isDead() { return dead; }
    
+   abstract String getType();
+   
    public void printCharacterSheet() {
       Main.print("==========================================");
       Main.print("Name: " + getName());

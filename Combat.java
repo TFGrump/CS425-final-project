@@ -9,14 +9,14 @@ import java.util.ArrayList;
 public class Combat
 {
     ArrayList<Person> teamOne, teamTwo;
-    
+
     public Combat(ArrayList<Person> teamOne, ArrayList<Person> teamTwo)
     {
         this.teamOne = teamOne;
         this.teamTwo = teamTwo;
         startCombat();
     }
-    
+
     /*
      * Team One will attack before Team Two
      * The Attack Order will be the order in which they appear in the ArrayList
@@ -27,13 +27,19 @@ public class Combat
     private GameEvent startCombat()
     {
         GameEvent gameEvent = null;
+        do{
+            for(Person person: teamOne) turn(person);
+            for(Person person: teamTwo) turn(person);
+        }while(!teamOne.isEmpty() && !teamTwo.isEmpty());
         return gameEvent;
     }
-    
+
     /*
      * A person takes a turn in combat
      */
     private void turn(Person person)
     {
+        if(person.getType().equals("Player")) 
+            TextInputManager.prompt();
     }
 }
