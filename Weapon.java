@@ -10,8 +10,8 @@ public class Weapon extends GameItem {
 	
 	//public
 	//constructors
-	public Weapon(String name, float weight, float value, float damage, float accuracy, float firerate, int mag, int range) {
-		super(name, weight, value);
+	public Weapon(String name, int value, double weight, float damage, float accuracy, float firerate, int mag, int range) {
+		super(name, value, weight);
 		this.damage = damage;
 		this.accuracy = accuracy;
 		this.firerate = firerate;
@@ -29,20 +29,20 @@ public class Weapon extends GameItem {
 	
 	//getters
 	public float getDamage() {
-		return this.damage;
+		return damage;
 	}
 	public float getAccuracy() {
-		return this.accuracy;
+		return accuracy;
 	}
 	public float getFirerate() {
-		return this.firerate;
+		return firerate;
 	}
 	public int getMag() {
-		return this.mag;
+		return mag;
 	}
 	public int getRange() {
-		return this.range;
-	}	
+		return range;
+	}
 	
 
 }

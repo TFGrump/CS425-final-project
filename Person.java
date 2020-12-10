@@ -9,6 +9,12 @@ public abstract class Person {
    protected String lastName;
    protected int age;
    
+   // Equipped Items
+   protected Weapon weaponSlot;
+   protected Apparel headSlot;
+   protected Apparel torsoSlot;
+   protected Apparel legsSlot;
+   
    // Relationships and Assets
    protected ArrayList<Person> friends;
    protected ArrayList<Person> rivals;
@@ -17,6 +23,7 @@ public abstract class Person {
    
    // Stats
    protected int hp; // Health points
+   protected int maxHp; // Maximum Health points
    protected int strength; // Strength
    protected int perception; // Perception
    protected int endurance; // Endurance
@@ -37,13 +44,42 @@ public abstract class Person {
       buildings = new ArrayList<Building>();
    }
    
+   // Getters
+   public boolean getGender() { return gender; }
    public int getAge() { return age; }
    public String getName() { return firstName + " " + lastName; }
    public String getFirstName() { return firstName; }
    public String getLastName() { return lastName; }
    public boolean isDead() { return dead; }
+   public ArrayList<Person> getFriends() { return friends; }
+   public ArrayList<Person> getRivals() { return rivals; }
+   public ArrayList<Building> getBuildings() { return buildings; }
+   public ArrayList<GameItem> getInventory() { return inventory; }
    
-   abstract String getType();
+   // Take/Heal Damage and death
+   public void healDamage(int damage) {
+     if (this.dead) return; // Can't heal dead people
+     this.hp += damage;
+     if (this.hp > maxHp) this.hp = maxHp;
+   }
+   public void takeDamage(int damage) {
+      this.hp -= damage;
+      if (this.hp <= 0) this.die();
+   }
+   public void die() {
+      this.dead = true;
+      this.hp = 0;
+   }
+   
+   // Getters and setters related to equipped items
+   public Weapon getEquippedWeapon() { return weaponSlot; }
+   public Apparel getEquippedHead() { return headSlot; }
+   public Apparel getEquippedTorso() { return torsoSlot; }
+   public Apparel getEquippedLegs() { return legsSlot; }
+   public void equipWeapon(Weapon weapon) { this.weaponSlot = weapon; }
+   public void equipHead(Apparel apparel) { this.headSlot = apparel; }
+   public void equipTorso(Apparel apparel) { this.torsoSlot = apparel; }
+   public void equipLegs(Apparel apparel) { this.legsSlot = apparel; }
    
    public void printCharacterSheet() {
       Main.print("==========================================");
@@ -52,4 +88,6 @@ public abstract class Person {
       Main.print("Gender: " + (gender ? "Male" : "Female"));
       Main.print("==========================================");
    }
+   
+   public abstract String getType();
 }
