@@ -5,16 +5,14 @@ public class Main {
    public static void main(String[] args) {
       setup();
       
-      // TODO: Put main menu stuff here
+      System.out.println("Welcome to Gangster ! ---Weeb Kid 2020");
       
-      
-      
-      saveAndQuit();
+      save();
    }
    
    private static void setup() {
       System.out.println("Starting...");
-      // TODO: Add setup
+      
       System.out.println("Complete!");
    }
    
