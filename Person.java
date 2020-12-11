@@ -55,6 +55,20 @@ public abstract class Person {
    public ArrayList<Person> getRivals() { return rivals; }
    public ArrayList<Building> getBuildings() { return buildings; }
    public ArrayList<GameItem> getInventory() { return inventory; }
+   public int getBaseStr() { return strength; }
+   public int getModStr() { return headSlot.getStrMod() + torsoSlot.getStrMod() + legsSlot.getStrMod(); }
+   public int getBasePer() { return perception; }
+   public int getModPer() { return headSlot.getPerMod() + torsoSlot.getPerMod() + legsSlot.getPerMod(); }
+   public int getBaseEnd() { return endurance; }
+   public int getModEnd() { return headSlot.getEndMod() + torsoSlot.getEndMod() + legsSlot.getEndMod(); }
+   public int getBaseChr() { return charisma; }
+   public int getModChr() { return headSlot.getChrMod() + torsoSlot.getChrMod() + legsSlot.getChrMod(); }
+   public int getBaseInt() { return intelligence; }
+   public int getModInt() { return headSlot.getIntMod() + torsoSlot.getIntMod() + legsSlot.getIntMod(); }
+   public int getBaseAgi() { return agility; }
+   public int getModAgi() { return headSlot.getAgiMod() + torsoSlot.getAgiMod() + legsSlot.getAgiMod(); }
+   public int getBaseLuc() { return luck; }
+   public int getModLuc() { return headSlot.getLucMod() + torsoSlot.getLucMod() + legsSlot.getLucMod(); }
    
    // Take/Heal Damage and death
    public void healDamage(int damage) {
@@ -76,6 +90,7 @@ public abstract class Person {
    public Apparel getEquippedHead() { return headSlot; }
    public Apparel getEquippedTorso() { return torsoSlot; }
    public Apparel getEquippedLegs() { return legsSlot; }
+   
    public void equipWeapon(Weapon weapon) { this.weaponSlot = weapon; }
    public void equipHead(Apparel apparel) { this.headSlot = apparel; }
    public void equipTorso(Apparel apparel) { this.torsoSlot = apparel; }
