@@ -1,4 +1,4 @@
-576
+574
 Algiers Point
 Allegheny Center
 Allentown
@@ -32,7 +32,7 @@ Beacon Hill
 Bedford
 Bedford Dwellings
 Bedford Park
-Bedford–Stuyvesant
+Bedford-Stuyvesant
 Beechhurst
 Beechview
 Behrman
@@ -144,7 +144,7 @@ Douglas Manor
 Douglaston
 Douglaston Hill
 Douglaston Park
-Douglaston–Little Neck
+Douglaston Little Neck
 Downtown
 Downtown Brooklyn
 Downtown Flushing
@@ -292,7 +292,7 @@ Leonidas
 Lighthouse Hill
 Lincoln Park
 Lincoln Place
-Lincoln–Lemington–Belmar
+Lincoln-Lemington-Belmar
 Lind-Bohanon
 Linda Vista
 Linden Hill
@@ -427,7 +427,6 @@ RAMBO
 Ramblersville
 Rancho Bernardo
 Rancho Encantada
-Rancho Peñasquitos
 Randall Manor
 Ravenswood
 Red Hook
@@ -476,7 +475,7 @@ Sorrento Mesa
 Sorrento Valley
 Soundview
 Spring Garden
-Spring Hill–City View
+Spring Hill-City View
 Springfield Gardens
 Spuyten Duyvil
 St. Anthony
