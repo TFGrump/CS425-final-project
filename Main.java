@@ -6,10 +6,12 @@ public class Main {
       setup();
       
       // TODO: Put main menu stuff here
+      CommandCreateWorld cmd1 = new CommandCreateWorld();
+      TextInputManager.addCommand(cmd1);
       
-      
-      
-      saveAndQuit();
+      while (true) {
+         TextInputManager.prompt();
+      }
    }
    
    private static void setup() {
