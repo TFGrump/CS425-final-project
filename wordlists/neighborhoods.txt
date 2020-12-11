@@ -1,4 +1,4 @@
-578
+576
 Algiers Point
 Allegheny Center
 Allentown
@@ -97,7 +97,6 @@ Chatham Village
 Chelsea
 Cherokee Point
 Chinatown
-Chollas Creek
 Chollas View
 City Heights
 City Line
@@ -463,7 +462,6 @@ San Ysidro
 Sandy Ground
 Schuylerville
 Scripps Ranch
-Sea Gate
 Serra Mesa
 Seventh Ward
 Seward
@@ -477,7 +475,6 @@ Skyline
 Sorrento Mesa
 Sorrento Valley
 Soundview
-Spring Creek
 Spring Garden
 Spring Hill–City View
 Springfield Gardens
