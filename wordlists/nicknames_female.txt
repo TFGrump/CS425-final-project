@@ -1,5 +1,4 @@
-172
-11 Inch
+149
 4 Stroke
 Ace Of Spades
 Amazon
@@ -23,30 +22,24 @@ Brandy
 Breaker
 Bullet
 Bumpy
-Butterass
 Calypso
 Caprice
 Chains
 Chao
 Chee-Chee
-Chicken Man
 Clumsy
 Cougar
-Creeper
 Crow
 Cruzito
 Da Boss
 Dagger
 Dementor
 Demon
-Dog
 Doom
 Dopey
-Dracula
 Dragon
 Dreads
 Duchess
-El Chuey
 Electra
 Fang
 Flaco
@@ -62,7 +55,6 @@ Ginger
 Gizmo
 Goddess
 Goldie
-Grandfather
 Gunner
 Hammer
 Handlebars
@@ -74,39 +66,31 @@ Hot Lips
 Ice Box
 Iron Heart
 Ironclad
-Jaguar
-Joker
 Kiki
 Killer
 Kinky
 Kitten
-Kitty And Any Other Kind Of Cat!
+Kitty And Any Other Kind OCat!
 Knuckles
 La Giggles
 La Shy Girl
 Lil Tramposo
-Lil’ Loco
+Lilâ€™ Loco
 Lips
 Little Clown
 Little Puppet
 Madam
-Mamba
 Masher
-Max
 Medusa
 Minor
 Minx
 Montana
 Mousey
-Mr. Scrappy
-Mussolini
 Nails
 Nevada
 Noir
 Peanuts
-Peewee
 Pit Bull
-Playboy
 Popcorn
 Princess
 Psycho
@@ -118,7 +102,6 @@ Red Ryder
 Red Stiletto
 Repogirl
 Satyr
-Scarface
 Scissors
 Screwdriver
 Scythe
@@ -148,18 +131,12 @@ Stacks
 Stiletto
 Storm
 Swifty
-T-Bone
 Tank
-Tarzan
 Tequila
-Terminator
 Terror
-That Guy
-The Godfather
 The Merchant Of Death
 The Owl
 The Prophet
-The Quiet Godfather
 The Reluctant Prine
 Tick-Tock
 Tigress
