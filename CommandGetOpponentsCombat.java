@@ -5,11 +5,11 @@
  * @author Theorin Feder
  * @version 0.1
  */
-public class CommandGetOpponents extends Command
+public class CommandGetOpponentsCombat extends Command
 {
     Combat combat;
     
-    public CommandGetOpponents(Combat combat)
+    public CommandGetOpponentsCombat(Combat combat)
     {
         this.combat = combat;
     }
