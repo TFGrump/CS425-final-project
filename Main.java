@@ -5,9 +5,13 @@ public class Main {
    public static void main(String[] args) {
       setup();
       
-      System.out.println("Welcome to Gangster ! ---Weeb Kid 2020");
-      
-      save();
+      // TODO: Put main menu stuff here
+      CommandCreateWorld cmd1 = new CommandCreateWorld();
+      TextInputManager.addCommand(cmd1);
+
+      while (true) {
+         TextInputManager.prompt();
+      }
    }
    
    private static void setup() {
