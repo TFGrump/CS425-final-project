@@ -27,7 +27,7 @@ public class CommandAttackCombat extends Command
         
         player = combat.findPlayer(combat);
         
-        if(tokens != null && tokens.length == 4)
+        if(tokens != null && tokens.length == 2)
         {
             attackTarget = findTarget(tokens[1]);
             if(attackTarget == null)return;
@@ -48,9 +48,6 @@ public class CommandAttackCombat extends Command
         System.out.println("Input: attack [target's first name] with [weapon]");
     }
     
-    /*
-     * 
-     */
     private Person findTarget(String name)
     {
         Person person = null;
