@@ -1,6 +1,6 @@
 
 /**
- * The class CommandGetOponents will print out the names of the opposing team.
+ * The class CommandGetOponentsCombat will print out the names of the opposing team.
  *
  * @author Theorin Feder
  * @version 0.1
