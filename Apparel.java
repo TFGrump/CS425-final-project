@@ -10,15 +10,15 @@ public class Apparel extends GameItem {
    private int luckMod;
 	
 	// Constructor
-   public Apparel(String name, int value, double weight, int strengthMod, int perceptionMod, int enduranceMod, int charismaMod, int intelligenceMod, int luckMod, int agilityMod) {
+   public Apparel(String name, int value, double weight, int s, int p, int e, int c, int i, int a, int l) {
       super(name, value, weight);
-      this.strengthMod = strengthMod;
-      this.perceptionMod = perceptionMod;
-      this.enduranceMod = enduranceMod;
-      this.charismaMod = charismaMod;
-      this.intelligenceMod = intelligenceMod;
-      this.agilityMod = agilityMod;
-      this.luckMod = luckMod;
+      this.strengthMod = s;
+      this.perceptionMod = p;
+      this.enduranceMod = e;
+      this.charismaMod = c;
+      this.intelligenceMod = i;
+      this.agilityMod = a;
+      this.luckMod = l;
    }
    
    // Get respective stat modifiers
@@ -41,7 +41,7 @@ public class Apparel extends GameItem {
       return agilityMod; 
    }
    public int getLucMod() { 
-      return luckMod; 
+      return luckMod;
    }
    
    public String getBriefDetails() {

@@ -13,4 +13,7 @@ public abstract class GameItem {
    public String getName() { return name; }
    public int getValue() { return value; }
    public double getWeight() { return weight; }
+   
+   public abstract String getBriefDetails();
+   public abstract String getDetails();
 }

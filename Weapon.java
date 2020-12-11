@@ -1,16 +1,15 @@
 
 public class Weapon extends GameItem {
 
-	//private
-	private float damage;
-	private float accuracy;
-	private float firerate;
+	// Private
+	private double damage;
+	private double accuracy;
+	private double firerate;
 	private int mag;
 	private int range;
 	
-	//public
-	//constructors
-	public Weapon(String name, int value, double weight, float damage, float accuracy, float firerate, int mag, int range) {
+	// Constructor
+	public Weapon(String name, int value, double weight, double damage, double accuracy, double firerate, int mag, int range) {
 		super(name, value, weight);
 		this.damage = damage;
 		this.accuracy = accuracy;
@@ -18,23 +17,15 @@ public class Weapon extends GameItem {
 		this.mag = mag;
 		this.range = range;
 	}
-	public Weapon(String name, float damage, float accuracy, float firerate, int mag, int range) {
-		super(name, 0, 0);
-		this.damage = damage;
-		this.accuracy = accuracy;
-		this.firerate = firerate;
-		this.mag = mag;
-		this.range = range;
-	}
 	
-	//getters
-	public float getDamage() {
+	// Getters
+	public double getDamage() {
 		return damage;
 	}
-	public float getAccuracy() {
+	public double getAccuracy() {
 		return accuracy;
 	}
-	public float getFirerate() {
+	public double getFirerate() {
 		return firerate;
 	}
 	public int getMag() {
@@ -43,6 +34,29 @@ public class Weapon extends GameItem {
 	public int getRange() {
 		return range;
 	}
-	
-
+   
+   public String getBriefDetails() {
+      return name + " - "
+         + "[Val: " + value + "] [Wgt: " + weight + "] "
+         + "[Dam: " + damage + "] "
+         + "[Acc: " + accuracy + "] "
+         + "[Fir: " + firerate + "] "
+         + "[Mag: " + mag + "] "
+         + "[Range: " + range + "]";
+   }
+   
+   public String getDetails() {
+      return name + "\n"
+         + "[Val: " + value + "] [Wgt: " + weight + "]\n"
+         + "[Dam: " + damage + "]\n"
+         + "[Acc: " + accuracy + "]\n"
+         + "[Fir: " + firerate + "]\n"
+         + "[Mag: " + mag + "]\n"
+         + "[Range: " + range + "]";
+   }
+   
+   @Override
+   public String toString() {
+      return getBriefDetails();
+   }
 }
