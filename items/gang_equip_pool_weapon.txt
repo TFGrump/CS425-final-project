@@ -1,0 +1,2 @@
+0 value=20 weight=9 damage=2 acc=0.5 firerate=5 mag=40 range=20 'The Thompson 1928' #Weapon
+2 value=10 weight=2 damage=5 acc=0.5 firerate=5 mag=11 range=30 'Pistol' #Weapon
