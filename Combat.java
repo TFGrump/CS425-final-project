@@ -89,13 +89,14 @@ public class Combat
     boolean isTeamOne; //Will be assigned true if the player is on teamOne
     boolean correctInput; // Will be assigned true once the player has correctly given an attack command
     boolean flee;
-    ArrayList<Person> deadPeople;
-
+    ArrayList<Person> deadPeople[];
     public Combat(Person[] teamOne, Person[] teamTwo)
     {
         this.teamOne = new Team(teamOne, true);
         this.teamTwo = new Team(teamTwo, false);
-        deadPeople = new ArrayList<Person>();
+        deadPeople = new ArrayList[2];
+        deadPeople[0] = new ArrayList<Person>();
+        deadPeople[1] = new ArrayList<Person>();
         flee = false;
         correctInput = false;
         isTeamOne = false;
@@ -107,7 +108,7 @@ public class Combat
      * The Combat ends when all of the Persons died on a team (or otherwise, like an escape)
      * The opposing team never flees.
      */
-    public ArrayList<Person> startCombat()
+    public ArrayList<Person>[] startCombat()
     {
         GameEvent gameEvent = null;
         teamOne.sort();
@@ -178,7 +179,7 @@ public class Combat
         if(target.isDead())
         {
             logDeath(target);
-            deadPeople.add(teamOne.removePerson(target));
+            removePerson(target, !team);
         }
     }
 
@@ -235,7 +236,13 @@ public class Combat
         System.out.println(person.getFirstName() + " is now dead.");
     }
 
-    public void removePerson(Person person){ deadPeople.add(isTeamOne ? teamTwo.removePerson(person) : teamOne.removePerson(person)); }
+    public void removePerson(Person target, boolean team)
+    {
+        if(team)
+                deadPeople[0].add(teamOne.removePerson(target));
+            else
+                deadPeople[1].add(teamTwo.removePerson(target));
+    }
 
     public int getTotalSpeed(Team team){ return team.getTotalSpeed(); }
     

@@ -39,7 +39,7 @@ public class CommandAttackCombat extends Command
                 if(attackTarget.isDead())
                 {
                     combat.logDeath(attackTarget);
-                    combat.removePerson(attackTarget);
+                    combat.removePerson(attackTarget, !combat.isTeamOne);
                 }
                 combat.correctInput = true;
             }
