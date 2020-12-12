@@ -128,20 +128,26 @@ public class Combat
         if(teamOne.length() == 0)
         {
             if(isTeamOne)
-                System.out.println("You lose, you loser.");
+            {
+                System.out.println("You died, you loser.");
+                System.exit(0);
+            }
             else
-                System.out.println("You win, you winner.");
+                System.out.println("You win, you winner!");
         }
         else if(teamTwo.length() == 0)
         {
             if(!isTeamOne)
-                System.out.println("You lose, you loser.");
+            {
+                System.out.println("You died, you loser.");
+                System.exit(0);
+            }
             else
-                System.out.println("You win, you winner.");
+                System.out.println("You win, you winner!");
         }
         else
         {
-            System.out.println("You have fled from combat. Coward.");
+            System.out.println("You have fled from combat. Coward!");
         }
         
         return deadPeople;
