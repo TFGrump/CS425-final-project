@@ -1,62 +1,61 @@
-
 public class Weapon extends GameItem {
 
-	// Private
-	private double damage;
-	private double accuracy;
-	private double firerate;
-	private int mag;
-	private int range;
-	
-	// Constructor
-	public Weapon(String name, int value, double weight, double damage, double accuracy, double firerate, int mag, int range) {
-		super(name, value, weight);
-		this.damage = damage;
-		this.accuracy = accuracy;
-		this.firerate = firerate;
-		this.mag = mag;
-		this.range = range;
-	}
-	
-	// Getters
-	public double getDamage() {
-		return damage;
-	}
-	public double getAccuracy() {
-		return accuracy;
-	}
-	public double getFirerate() {
-		return firerate;
-	}
-	public int getMag() {
-		return mag;
-	}
-	public int getRange() {
-		return range;
-	}
-   
-   public String getBriefDetails() {
-      return name + " - "
-         + "[Val: " + value + "] [Wgt: " + weight + "] "
-         + "[Dam: " + damage + "] "
-         + "[Acc: " + accuracy + "] "
-         + "[Fir: " + firerate + "] "
-         + "[Mag: " + mag + "] "
-         + "[Range: " + range + "]";
-   }
-   
-   public String getDetails() {
-      return name + "\n"
-         + "[Val: " + value + "] [Wgt: " + weight + "]\n"
-         + "[Dam: " + damage + "]\n"
-         + "[Acc: " + accuracy + "]\n"
-         + "[Fir: " + firerate + "]\n"
-         + "[Mag: " + mag + "]\n"
-         + "[Range: " + range + "]";
-   }
-   
-   @Override
-   public String toString() {
-      return getBriefDetails();
-   }
+    //private
+    private int damage;
+    private double accuracy;
+    private int firerate;
+    private int maxMag;
+    private int mag;
+    private int range;
+
+    //public
+    //constructors
+    public Weapon(String name, int value, double weight, int damage, double accuracy, int firerate, int mag, int range) {
+        super(name, value, weight);
+        this.damage = damage;
+        this.accuracy = accuracy;
+        this.firerate = firerate;
+        this.mag = this.maxMag = mag;
+        this.range = range;
+    }
+
+    public Weapon(String name, int damage, double accuracy, int firerate, int mag, int range) {
+        super(name, 0, 0);
+        this.damage = damage;
+        this.accuracy = accuracy;
+        this.firerate = firerate;
+        this.mag = mag;
+        this.range = range;
+    }
+
+    //getters
+    public int getDamage() {
+        return damage;
+    }
+
+    public double getAccuracy() {
+        return accuracy;
+    }
+
+    public int getFirerate() {
+        return firerate;
+    }
+
+    public int getMag() {
+        return mag;
+    }
+
+    public int getRange() {
+        return range;
+    }
+
+    public void shootBullets(int shotsFired)
+    {
+        mag -= shotsFired;
+    }
+    
+    public void reload()
+    {
+        mag = maxMag;
+    }
 }
