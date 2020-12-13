@@ -26,7 +26,7 @@ public class Perlin {
    }
    
    public double getValueAt(int x, int y) {
-      return getValueAt(x, y, (byte)0);
+      return getValueAt(x, y, (byte)2);
    }
    
    public double getValueAt(int x, int y, byte mode) {
@@ -85,7 +85,7 @@ public class Perlin {
       double min = -1.0;
       Vector v = new Vector(dimensions);
       for (int i = 0; i < dimensions; i++)
-         v.set(i, ((Math.random() * (max - min)) + min));
+         v.set(i, ((ran.nextDouble() * (max - min)) + min));
       return v;
    }
    

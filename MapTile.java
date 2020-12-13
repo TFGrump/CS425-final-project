@@ -11,10 +11,23 @@ public class MapTile {
    
    double difficulty;
    String name;
+   int x, y; // Coordinates on larger map
    ArrayList<Building> buildings;
    
-   public MapTile(double difficulty) {
+   public MapTile(String name, double difficulty) {
+      this.name = name;
       this.difficulty = difficulty;
       buildings = new ArrayList<Building>();
+   }
+   
+   public ArrayList<Building> getBuildings() { return buildings; }
+   public void addBuilding(Building building) { buildings.add(building); }
+   
+   public String toString() {
+      String str = "========" + name + "========\n";
+      for (Building loc: buildings) {
+         str += loc.getName() + " (" + loc.getOccupants().size() + ")\n";
+      }
+      return str;
    }
 }

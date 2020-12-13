@@ -7,16 +7,19 @@ public class World {
    
    public World() {
       pcg = new ProceduralContentGenerator();
+      generate(10, 10);
    }
    
    public World(long seed) {
       pcg = new ProceduralContentGenerator(seed);
       perlin = new Perlin(3, 3, 10, 10, seed);
+      generate(10, 10);
    }
    
    public World(long seed, int width, int height) {
       pcg = new ProceduralContentGenerator(seed);
       perlin = new Perlin(3, 3, width, height, seed);
+      generate(width, height);
    }
    
    public World(String filename) {
@@ -25,11 +28,11 @@ public class World {
    
    // NOTE: Coud handle generation settings
    private void generate(int width, int height) {
-      MapTile[][] map = new MapTile[width][height];
+      map = new MapTile[width][height];
       for (int i = 0; i < width; i++) {
          for (int j = 0; j < height; j++) {
             double perlinValue = perlin.getValueAt(i, j); // TODO: Get perlin value for specific tile
-            map[i][j] = pcg.genTile((perlinValue + 1) / 2);
+            map[i][j] = pcg.genTile((perlinValue + 1) / 2.0);
          }
       }
    }
@@ -59,8 +62,21 @@ public class World {
    }
    
    public static void main(String[] args) {
-      World world = new World(0);
-      world.start();
+      int width = 10, height = 10;
+      World world = new World(0, width, height);
+      //world.start();
+      
+      for (int x = 0; x < width; x++) {
+         for (int y = 0; y < height; y++) {
+            Main.print(world.map[x][y]);
+         }
+      }
+      for (int x = 0; x < width; x++) {
+         System.out.println();
+         for (int y = 0; y < height; y++) {
+            System.out.print("[" + world.map[x][y].difficulty + "] ");
+         }
+      }
    }
 
 }

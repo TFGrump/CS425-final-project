@@ -1,0 +1,22 @@
+21
+Deputy
+Captain
+Chief Deputy
+Sheriff
+Cadet
+Probationary Trooper
+Trooper
+Senior
+Corporal
+Sergeant
+Lieutenant
+Captain
+Major
+Lieutenant Colonel
+Colonel
+Special Agent
+Supervisory Special Agent
+Assistant Special Agent in Charge
+Special Agent in Charge
+Assistant Deputy Director
+Director

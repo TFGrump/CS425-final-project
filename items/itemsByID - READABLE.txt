@@ -1,35 +1,43 @@
+===========Placeholder Items for when nothing is equipped========================
 0 value=0 weight=0 damage=1 acc=0.7 firerate=1 mag=1 range=5 'Rock' #Weapon
 1 value=0 weight=0 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Nothing' #Apparel
+===========Pistols==========
 2 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt Police Positive Special' #Weapon
 3 value=0 weight=0 damage=10 acc=0.55 firerate=1 mag=5 range=30 'Smith & Wesson Model 1 ½' #Weapon
 4 value=0 weight=0 damage=15 acc=0.50 firerate=1 mag=7 range=50 'M1911 Pistol' #Weapon
 5 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Beretta Model 1915' #Weapon
 6 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Mauser C96' #Weapon
 7 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt New Service' #Weapon
+===========Shotguns=======================
 8 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Short-Barreled Shotgun' #Weapon
 9 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Remington Model 10' #Weapon
 10 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Browning Auto-5' #Weapon
 11 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Winchester Model 1912' #Weapon
 12 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Sjögren Shotgun' #Weapon
+===========Sub-machine guns===============
 13 value=20 weight=9 damage=2 acc=0.5 firerate=5 mag=40 range=20 'M1921 Thompson' #Weapon
 14 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Tommy Gun' #Weapon
 15 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'OVP 1918' #Weapon
 16 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'MP 18 Submachine Gun' #Weapon
 17 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Beretta M1918' #Weapon
+===========Machine guns===================
 18 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'BAR M1918' #Weapon
 19 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Chauchat Machine Gun' #Weapon
 20 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Lewis Gun' #Weapon
 21 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Madsen Machine Gun' #Weapon
+===========Rifles=========================
 22 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Savage Model 99' #Weapon
 23 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Rifle' #Weapon
 24 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Remington Model 8' #Weapon
 25 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Gewehr 98' #Weapon
+===========Sniper Rifles==================
 26 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'M1903 Springfield' #Weapon
 27 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'M1917 Enfield' #Weapon
 28 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Lee-Enfield SMLE' #Weapon
 29 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Scoped Savage Model 99' #Weapon
 30 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Scoped Rifle' #Weapon
 31 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Mosin–Nagant' #Weapon
+===========Head Apparel===================
 32 value=10 weight=0.1 s=0 p=1 e=0 c=-1 i=1 a=0 l=0 'Prescription Glasses' #Apparel
 33 value=10 weight=0.1 s=0 p=-1 e=0 c=1 i=0 a=0 l=0 'Sunglasses' #Apparel
 34 value=20 weight=0.1 s=0 p=1 e=0 c=1 i=0 a=0 l=0 'Prescription Sunglasses' #Apparel
@@ -38,6 +46,7 @@
 37 value=10 weight=0.4 s=0 p=0 e=0 c=3 i=0 a=-1 l=0 'Fedora' #Apparel
 38 value=10 weight=0.4 s=2 p=0 e=0 c=-1 i=0 a=0 l=0 'Bandana' #Apparel
 39 value=10 weight=0.4 s=0 p=0 e=0 c=5 i=0 a=0 l=1 'Police Cap' #Apparel
+===========Torso Apparel==================
 40 value=15 weight=4 s=0 p=0 e=2 c=0 i=0 a=0 l=0 'Cotton Padded Vest' #Apparel
 41 value=30 weight=8 s=0 p=0 e=4 c=0 i=0 a=0 l=0 'Silk Padded Vest' #Apparel
 42 value=50 weight=12 s=0 p=0 e=6 c=0 i=0 a=0 l=0 'Metal Lined Waistcoat' #Apparel
@@ -48,6 +57,7 @@
 47 value=10 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Shirt' #Apparel
 48 value=10 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Shirt' #Apparel
 49 value=120 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Jacket' #Apparel
+===========Legs Apparel===================
 50 value=8 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Pants' #Apparel
 51 value=90 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Pants' #Apparel
 52 value=90 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Pants' #Apparel

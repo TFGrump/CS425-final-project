@@ -19,7 +19,7 @@ public abstract class Person {
    protected ArrayList<Person> friends;
    protected ArrayList<Person> rivals;
    protected ArrayList<GameItem> inventory;
-   protected int money = 0;
+   protected int money;
    
    // Stats
    protected final int SPECIAL_MIN = 1;
@@ -34,14 +34,15 @@ public abstract class Person {
    protected int hp = maxHp; // Health points
    protected ArrayList<Trait> traits;
    
-   public Person(String firstName, String lastName, int age, boolean gender, boolean dead) {
+   public Person(String firstName, String lastName, int age, boolean gender) {
       this.firstName = firstName;
       this.lastName = lastName;
       this.age = age;
       this.gender = gender;
-      this.dead = dead;
+      this.dead = false;
       friends = new ArrayList<Person>();
       rivals = new ArrayList<Person>();
+      this.money = 0;
    }
    
    public void levelUp(char c) {
@@ -112,6 +113,8 @@ public abstract class Person {
    public ArrayList<Person> getRivals() { return rivals; }
    public ArrayList<GameItem> getInventory() { return inventory; }
    
+   
+   
    // Take/Heal Damage and death
    public void healDamage(int damage) {
      if (this.dead) return; // Can't heal dead people
@@ -137,11 +140,29 @@ public abstract class Person {
    public void equipTorso(Apparel apparel) { this.torsoSlot = apparel; }
    public void equipLegs(Apparel apparel) { this.legsSlot = apparel; }
    
+   // Getters and setters for currency
+   public int getMoney() { return money; }
+   public void addMoney(int moneyToAdd) { money += moneyToAdd; }
+   public void loseMoney(int moneyLost) { money = Math.max(money - moneyLost, 0); }
+   
    public void printCharacterSheet() {
       Main.print("==========================================");
       Main.print("Name: " + getName());
       Main.print("Age: " + age);
       Main.print("Gender: " + (gender ? "Male" : "Female"));
+      Main.print("==SPECIAL==");
+      Main.print("Strength: \t(" + strength + "/" + getModStr() + "/" + (strength + getModStr()) + ")");
+      Main.print("Perception: \t(" + perception + "/" + getModPer() + "/" + (perception + getModPer()) + ")");
+      Main.print("Endurance: \t(" + endurance + "/" + getModEnd() + "/" + (endurance + getModEnd()) + ")");
+      Main.print("Charisma: \t(" + charisma + "/" + getModChr() + "/" + (charisma + getModChr()) + ")");
+      Main.print("Intelligence: \t(" + intelligence + "/" + getModInt() + "/" + (intelligence + getModInt()) + ")");
+      Main.print("Agility: \t(" + agility + "/" + getModAgi() + "/" + (agility + getModAgi()) + ")");
+      Main.print("Luck: \t(" + luck + "/" + getModLuc() + "/" + (luck + getModLuc()) + ")");
+      Main.print("==EQUIPMENT==");
+      Main.print("Weapon: \t\"" + weaponSlot.getName() + "\"");
+      Main.print("Head: \t\"" + headSlot.getName() + "\"");
+      Main.print("Torso: \t\"" + torsoSlot.getName() + "\"");
+      Main.print("Legs: \t\"" + legsSlot.getName() + "\"");
       Main.print("==========================================");
    }
    
