@@ -14,5 +14,7 @@ Provided there is sufficient diversity in quest and world generation, our game w
 function as a sandbox where a player can experience adventures and dynamic stories
 in a world where outcomes truly matter.
 ## Techique Used
-We used Perlin noise in order to scale the difficultly of the people across the map. We did this so we had a smooth transition between high and low level enemies, we basically did not want a high level enemy being right next to a low level enemy.
+Perlin noise will be laid over the world map and used to create a nice difficulty
+gradient. That difficulty value will then be used to augment the generation of content
+within that area.
 ## YouTube Video of the Gameplay
