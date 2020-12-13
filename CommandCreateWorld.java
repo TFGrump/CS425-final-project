@@ -1,14 +1,15 @@
 public class CommandCreateWorld extends Command {
 
-      private long seed;
-      private int width;
-      private int height;
-      private boolean randomSeed = true;
+   private long seed;
+   private int width;
+   private int height;
+   private boolean randomSeed = true;
 
     // Returns true if this string would be a valid trigger for this command 
    public boolean isTrigger(String input) {
       String[] tokens = input.split(" ");
-      if (tokens.length < 2) return false;
+      if (tokens.length < 2) 
+         return false;
       if (tokens[0].equalsIgnoreCase("new") || tokens[0].equalsIgnoreCase("create")) {
          if (tokens[1].equalsIgnoreCase("world")) {
             
@@ -30,9 +31,10 @@ public class CommandCreateWorld extends Command {
    }
     // Code to be called when this command is executed
    public void execute() {
-      if (randomSeed) System.out.println("World of dimensions (" + width + " x " + height + ") created with random seed");
-      else System.out.println("World of dimensions (" + width + " x " + height + ") created with seed (" + seed + ")");
+      if (randomSeed) System.out.println("Generating world of dimensions (" + width + " x " + height + ") with random seed...");
+      else System.out.println("Generating world of dimensions (" + width + " x " + height + ") with seed (" + seed + ")...");
       
+      Main.world = new World((randomSeed ? (long)Math.random() : seed), width, height);
       // TODO: Instantiate world object here, and save it to a file, then also print out name to user
    }
    

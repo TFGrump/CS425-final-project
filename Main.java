@@ -2,16 +2,25 @@
 
 public class Main {
 
+   public static World world = null;
+
    public static void main(String[] args) {
-      setup();
+      //setup();
       
       // TODO: Put main menu stuff here
       CommandCreateWorld cmd1 = new CommandCreateWorld();
       TextInputManager.addCommand(cmd1);
       
-      while (true) {
+      while (world == null) {
          TextInputManager.prompt();
       }
+      
+      TextInputManager.removeCommand(cmd1);
+      TextInputManager.addCommand(new CommandMove(world, world.player));
+      TextInputManager.addCommand(new CommandEnterLocation(world, world.player));
+      TextInputManager.addCommand(new CommandAttack(world, world.player));
+      TextInputManager.addCommand(new CommandExamine(world, world.player));
+      world.start();
    }
    
    private static void setup() {

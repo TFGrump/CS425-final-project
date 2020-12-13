@@ -3,21 +3,21 @@ public class World {
    private ProceduralContentGenerator pcg;
    private Perlin perlin;
    
-   private MapTile[][] map;
+   public MapTile[][] map;
+   public Player player;
    
-   public World() {
-      pcg = new ProceduralContentGenerator();
-      generate(10, 10);
-   }
+   int width = 10, height = 10;
    
    public World(long seed) {
       pcg = new ProceduralContentGenerator(seed);
-      perlin = new Perlin(3, 3, 10, 10, seed);
+      perlin = new Perlin(3, 3, width, height, seed);
       generate(10, 10);
    }
    
    public World(long seed, int width, int height) {
       pcg = new ProceduralContentGenerator(seed);
+      this.width = width;
+      this.height = height;
       perlin = new Perlin(3, 3, width, height, seed);
       generate(width, height);
    }
@@ -28,13 +28,14 @@ public class World {
    
    // NOTE: Coud handle generation settings
    private void generate(int width, int height) {
-      map = new MapTile[width][height];
+      this.map = new MapTile[width][height];
       for (int i = 0; i < width; i++) {
          for (int j = 0; j < height; j++) {
             double perlinValue = perlin.getValueAt(i, j); // TODO: Get perlin value for specific tile
-            map[i][j] = pcg.genTile((perlinValue + 1) / 2.0);
+            this.map[i][j] = pcg.genTile((perlinValue + 1) / 2.0);
          }
       }
+      this.player = new Player("John", "Wick", 48, true); // Create player
    }
    
    // Load world from file
@@ -48,16 +49,14 @@ public class World {
    }
    
    public void start() {
+      System.out.println("Entering neighborhood:");
+      System.out.println(map[player.x][player.y]);
       
       // We would put the normal input loop in here
       
       while (true) {
          TextInputManager.prompt();
       }
-      
-   }
-   
-   public void handleEvent(GameEvent e) {
       
    }
    

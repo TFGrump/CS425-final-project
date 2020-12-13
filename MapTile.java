@@ -13,6 +13,7 @@ public class MapTile {
    String name;
    int x, y; // Coordinates on larger map
    ArrayList<Building> buildings;
+   ArrayList<Person> occupants;
    
    public MapTile(String name, double difficulty) {
       this.name = name;

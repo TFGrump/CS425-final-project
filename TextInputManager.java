@@ -16,7 +16,7 @@ public class TextInputManager {
    // Check if input is in array of valid inputs
    // If it's not, notify user
    public static void prompt() {
-      Main.print("Input prompt placeholder:"); // Prompt the user
+      Main.print("Enter Command:"); // Prompt the user
       String input = scanner.nextLine(); // Input
       if (input.equalsIgnoreCase("help")) help();
       else 
@@ -25,11 +25,11 @@ public class TextInputManager {
                command.execute();
    }
    
-   public static void addCommand(Command c) { commands.add(c); }
-   public static void removeCommand(Command c) { commands.remove(c); }
-   
    private static void help() {
       for (Command command: commands) command.printOneLineHelp();
    }
+   
+   public static void addCommand(Command c) { commands.add(c); }
+   public static void removeCommand(Command c) { commands.remove(c); }
    
 }

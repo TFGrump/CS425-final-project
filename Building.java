@@ -21,4 +21,12 @@ public abstract class Building {
    public ArrayList<Person> getOccupants() { return occupants; }
    public abstract int getFaction();
    public abstract String getFactionString();
+   
+   public String toString() {
+      String str = "========" + name + "========\n";
+      for (Person person: occupants) {
+         str += person.getName() + " (" + person.getType() + ")\n";
+      }
+      return str;
+   }
 }
