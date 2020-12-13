@@ -1,4 +1,4 @@
-# Gangster the Game (CS425 Final Project)
+# Gangster the Game (CS425 Final Project) [WIP]
 ## About the Game
 Text based RPG adventure game in a procedurally generated, persistent, dynamic
 world. Procedurally generated quests and events leave a lasting impact on the world
