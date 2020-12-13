@@ -29,33 +29,17 @@ public class Weapon extends GameItem {
     }
 
     //getters
-    public int getDamage() {
-        return damage;
-    }
+    public int getDamage(){ return damage; }
 
-    public double getAccuracy() {
-        return accuracy;
-    }
+    public double getAccuracy(){ return accuracy; }
 
-    public int getFirerate() {
-        return firerate;
-    }
+    public int getFirerate(){ return firerate; }
 
-    public int getMag() {
-        return mag;
-    }
+    public int getMag(){ return mag; }
 
-    public int getRange() {
-        return range;
-    }
+    public int getRange(){  return range; }
 
-    public void shootBullets(int shotsFired)
-    {
-        mag -= shotsFired;
-    }
+    public int shootBullets(){ return mag < firerate ? mag : firerate; }
     
-    public void reload()
-    {
-        mag = maxMag;
-    }
+    public void reload(){ mag = maxMag; }
 }
