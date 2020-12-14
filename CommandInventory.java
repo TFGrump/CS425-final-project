@@ -13,8 +13,10 @@ public class CommandInventory extends Command {
     public boolean isTrigger(String input) { return input.equalsIgnoreCase("inventory") || input.equalsIgnoreCase("bag"); } 
 
     public void execute() { 
-        if (player.getInventory().size() > 0) for(GameItem item: player.getInventory()) System.out.println(item.toString()); 
-        else System.out.println("There is nothing in your inventory."); } 
+        if (player.getInventory().size() > 0) {
+            System.out.println("====================[INVENTORY]==============");
+            for(GameItem item: player.getInventory()) System.out.println(item.toString());
+        } else System.out.println("There is nothing in your inventory."); } 
 
     public void printOneLineHelp() { System.out.println("[Inventory/Bag] -- Display the items in your inventory"); }
 
