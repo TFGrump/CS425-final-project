@@ -130,7 +130,6 @@ public class Combat
     */
    public ArrayList<Person>[] startCombat()
    {
-      GameEvent gameEvent = null;
       teamOne.sort();
       teamTwo.sort();
       Team[] teamAttackOrder = whosFirst(teamOne, teamTwo);
@@ -176,7 +175,7 @@ public class Combat
          isTeamOne = team;
          correctInput = false;
          while (!correctInput) {
-            TextInputManager.prompt();
+            TextInputManager.combatPrompt();
          }
       }
       else if (!flee) AIAttack(person, team);

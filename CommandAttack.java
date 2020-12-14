@@ -47,15 +47,15 @@ public class CommandAttack extends Command {
       CommandAttackCombat cmd1 = new CommandAttackCombat(combat);
       CommandFleeCombat cmd2 = new CommandFleeCombat(combat);
       CommandGetOpponentsCombat cmd3 = new CommandGetOpponentsCombat(combat);
-      TextInputManager.addCommand(cmd1);
-      TextInputManager.addCommand(cmd2);
-      TextInputManager.addCommand(cmd3);
+      TextInputManager.addCombatCommand(cmd1);
+      TextInputManager.addCombatCommand(cmd2);
+      TextInputManager.addCombatCommand(cmd3);
       player.isInCombat = true;
       combat.startCombat();
       player.isInCombat = false;
-      TextInputManager.removeCommand(cmd1);
-      TextInputManager.removeCommand(cmd2);
-      TextInputManager.removeCommand(cmd3);
+      TextInputManager.removeCombatCommand(cmd1);
+      TextInputManager.removeCombatCommand(cmd2);
+      TextInputManager.removeCombatCommand(cmd3);
       player.pingQuestCompletion();
    }
    
