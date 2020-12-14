@@ -15,7 +15,7 @@ public class World {
 	  this.height = height;
       pcg = new ProceduralContentGenerator();
       perlin = new Perlin(3, 3, width, height);
-      generate(10, 10);
+      generate(width, height);
    }
    
    public World(long seed, int width, int height) {
