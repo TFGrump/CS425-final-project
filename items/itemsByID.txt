@@ -12,7 +12,7 @@
 11 value=15 weight=11 damage=15 acc=0.3 firerate=1 mag=6 range=10 'Winchester Model 1912' #Weapon
 12 value=15 weight=11 damage=30 acc=0.25 firerate=1 mag=2 range=10 'Sjogren Shotgun' #Weapon
 13 value=20 weight=9 damage=2 acc=0.5 firerate=5 mag=30 range=20 'M1921 Thompson' #Weapon
-14 value=20 weight=9 damage=1.5 acc=0.5 firerate=10 mag=30 range=20 'Tommy Gun' #Weapon
+14 value=20 weight=9 damage=2 acc=0.5 firerate=10 mag=30 range=20 'Tommy Gun' #Weapon
 15 value=20 weight=9 damage=2 acc=0.75 firerate=4 mag=30 range=20 'OVP 1918' #Weapon
 16 value=20 weight=9 damage=1 acc=0.9 firerate=5 mag=30 range=20 'MP 18 Submachine Gun' #Weapon
 17 value=20 weight=9 damage=3 acc=0.35 firerate=5 mag=20 range=20 'Beretta M1918' #Weapon
