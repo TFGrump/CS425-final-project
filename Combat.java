@@ -230,8 +230,8 @@ public class Combat
         int hitThreshold = (int)(20.0 * weapon.getAccuracy() * (1 + (person.getBasePer() + person.getModPer())/100.0));
         int luckThreshold = (int)(20.0 * ((person.getBaseLuc()+person.getModLuc())/100.0));
 
-        int bulletsFired = weapon.shootBullets();   
         if (weapon.getMag() > 0) {
+           int bulletsFired = weapon.shootBullets();
             for (int i = 0; i < bulletsFired; i++) {
                 int damage = 0;
                 if ((int)(20*Math.random()) < hitThreshold) damage += weapon.getDamage();
