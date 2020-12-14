@@ -7,7 +7,7 @@ Barbershop
 Bookshop
 Antique Shop
 Butcher
-Café
+Cafe
 Rugs
 Dairy
 Corner Shop
