@@ -19,7 +19,8 @@ public class CommandEquipGear extends Command
     public void execute() {
         for(GameItem item: player.getInventory())
             if(item.getName().equalsIgnoreCase(tokens[1]))
-                player.equip(item);
+                player.equip(item); return;
+        System.out.println("The item " + tokens[1] + " is not in your inventory.");
     }
     
     public void printOneLineHelp() { System.out.println("[Equip] [Item] -- Equips the item to the player"); }
