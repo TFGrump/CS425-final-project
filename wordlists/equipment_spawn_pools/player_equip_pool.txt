@@ -1,4 +1,4 @@
-Weapon: 0
+Weapon: 2 3 4 5 6 7
 Head: 1
-Torso: 1
-Legs: 1
+Torso: 40
+Legs: 51
