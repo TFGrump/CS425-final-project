@@ -1,0 +1,4 @@
+Weapon: 2 2 2 2 2 11 22
+Head: 39
+Torso: 44
+Legs: 53
