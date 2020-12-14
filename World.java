@@ -38,7 +38,7 @@ public class World {
          }
       }
       player = new Player("John", "Wick", 48, true); // Create player
-      pcg.applyLevelUps(player, 100); // OP lol
+      pcg.applyLevelUps(player, 300); // OP lol
       pcg.equipRandomFromPool(player, "equipment_spawn_pools/player_equip_pool");
    }
    

@@ -40,7 +40,7 @@ public class CommandCreateWorld extends Command {
    
    // Print out one line of help to the user
    public void printOneLineHelp() {
-      System.out.println("New world -- Creates a new random world");
+      System.out.println("[New/create] [world] [width] [height] (seed) -- Creates a new random world");
    }
    
    // Print out a more detailed help menu

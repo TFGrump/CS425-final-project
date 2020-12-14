@@ -7,6 +7,9 @@ public class Main {
    public static void main(String[] args) {
       //setup();
       
+      System.out.println("Welcome to [UNTITLED TEXT BASED GAME WITH LOTS OF PROCEDURALLY GENERATED CONTENT]");
+      System.out.println("If you ever don't know what to do, type \"help\"!");
+      
       // TODO: Put main menu stuff here
       CommandCreateWorld cmd1 = new CommandCreateWorld();
       TextInputManager.addCommand(cmd1);
