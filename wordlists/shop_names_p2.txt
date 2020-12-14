@@ -1,0 +1,27 @@
+25
+Donuts
+Pies
+Tannery
+Bakery
+Barbershop
+Bookshop
+Antique Shop
+Butcher
+Cafe
+Rugs
+Dairy
+Corner Shop
+Deli
+Food Truck
+Grocery
+Newspaper Stand
+Paper Shop
+Petrol Station
+Salon
+Tobacconist
+Variety Store
+Sandwiches
+Hot Dogs
+Burgers
+Suits
+Tailor
