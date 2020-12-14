@@ -137,6 +137,7 @@ public class Combat
       do {
          for(Team team: teamAttackOrder) {
             for(Person person: team.getTeam()) {
+               if(teamOne.length() == 0 || teamTwo.length() == 0) break;
                turn(person, team.isTeamOne());
             }
          }
