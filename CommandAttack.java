@@ -52,7 +52,7 @@ public class CommandAttack extends Command {
       TextInputManager.addCombatCommand(cmd3);
       player.isInCombat = true;
       ArrayList<Person>[] deadPeople = combat.startCombat();
-      Person[] deadPeopleArray = new Person[deadPeople[0].size()];
+      /*Person[] deadPeopleArray = new Person[deadPeople[0].size()];
       deadPeople[0].toArray(deadPeopleArray);
       for(Person deadPerson : deadPeopleArray) {
     	  deadPerson.die();
@@ -63,7 +63,7 @@ public class CommandAttack extends Command {
       for(Person deadPerson: deadPeopleArray) {
     	  deadPerson.die();
     	  player.location.removeOccupant(deadPerson);
-      }
+      }*/
       player.isInCombat = false;
       TextInputManager.removeCombatCommand(cmd1);
       TextInputManager.removeCombatCommand(cmd2);
