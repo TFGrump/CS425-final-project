@@ -14,7 +14,7 @@ public class CommandCreateWorld extends Command {
          if (tokens[1].equalsIgnoreCase("world")) {
             
             if (tokens.length < 4) {
-               System.out.println("Correct usage: [new/create] world [width] [height] (seed); the bigger the more time it will take to create try 10 x 10 ~ 50 x 50");
+               System.out.println("Correct usage: [new/create] world [width] [height] (seed)");
                return false;
             }
             width = Integer.parseInt(tokens[2]);
@@ -31,15 +31,10 @@ public class CommandCreateWorld extends Command {
    }
     // Code to be called when this command is executed
    public void execute() {
-      if (randomSeed) {
-    	  System.out.println("Generating world of dimensions (" + width + " x " + height + ") with random seed...");
-          Main.world = new World(width, height);
-      }
-      else {
-    	  System.out.println("Generating world of dimensions (" + width + " x " + height + ") with seed (" + seed + ")...");
-          Main.world = new World(width, height);
-      }
+      if (randomSeed) System.out.println("Generating world of dimensions (" + width + " x " + height + ") with random seed...");
+      else System.out.println("Generating world of dimensions (" + width + " x " + height + ") with seed (" + seed + ")...");
       
+      Main.world = new World((randomSeed ? (long)Math.random() : seed), width, height);
       // TODO: Instantiate world object here, and save it to a file, then also print out name to user
    }
    
