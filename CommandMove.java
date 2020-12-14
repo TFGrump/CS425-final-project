@@ -50,6 +50,11 @@ public class CommandMove extends Command {
       }
       
       if (lastX != player.x || lastY != player.y) {
+    	 if(player.location != null) {
+    		 
+    		 player.location = null;
+    		 
+    	 }
          System.out.println("Entering neighborhood:");
          System.out.println(world.map[player.x][player.y]);
       }
