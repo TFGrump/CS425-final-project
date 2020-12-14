@@ -30,25 +30,25 @@
 29 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Scoped Savage Model 99' #Weapon
 30 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Scoped Rifle' #Weapon
 31 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Mosin–Nagant' #Weapon
-32 value=10 weight=0.1 s=0 p=1 e=0 c=-1 i=1 a=0 l=0 'Prescription Glasses' #Apparel
-33 value=10 weight=0.1 s=0 p=-1 e=0 c=1 i=0 a=0 l=0 'Sunglasses' #Apparel
-34 value=20 weight=0.1 s=0 p=1 e=0 c=1 i=0 a=0 l=0 'Prescription Sunglasses' #Apparel
-35 value=10 weight=0.4 s=0 p=0 e=0 c=0 i=0 a=2 l=0 'Baseball Cap' #Apparel
-36 value=10 weight=0.4 s=0 p=0 e=0 c=-1 i=0 a=2 l=0 'Baseball Cap (Backwards)' #Apparel
-37 value=10 weight=0.4 s=0 p=0 e=0 c=3 i=0 a=-1 l=0 'Fedora' #Apparel
-38 value=10 weight=0.4 s=2 p=0 e=0 c=-1 i=0 a=0 l=0 'Bandana' #Apparel
-39 value=10 weight=0.4 s=0 p=0 e=0 c=5 i=0 a=0 l=1 'Police Cap' #Apparel
-40 value=15 weight=4 s=0 p=0 e=2 c=0 i=0 a=0 l=0 'Cotton Padded Vest' #Apparel
-41 value=30 weight=8 s=0 p=0 e=4 c=0 i=0 a=0 l=0 'Silk Padded Vest' #Apparel
-42 value=50 weight=12 s=0 p=0 e=6 c=0 i=0 a=0 l=0 'Metal Lined Waistcoat' #Apparel
-43 value=60 weight=16 s=0 p=0 e=8 c=0 i=0 a=0 l=0 'Metal Lined Jacket' #Apparel
-44 value=150 weight=20 s=0 p=0 e=10 c=0 i=0 a=0 l=0 'Police Issue Body Armor' #Apparel
-45 value=200 weight=24 s=0 p=0 e=12 c=0 i=0 a=0 l=0 'Government Issue Body Armor' #Apparel
-46 value=300 weight=28 s=0 p=0 e=14 c=0 i=0 a=0 l=0 'Military Issue Armor' #Apparel
-47 value=10 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Shirt' #Apparel
-48 value=10 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Shirt' #Apparel
-49 value=120 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Jacket' #Apparel
-50 value=8 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Pants' #Apparel
-51 value=90 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Pants' #Apparel
-52 value=90 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Pants' #Apparel
-53 value=40 weight=1.5 s=0 p=0 e=3 c=0 i=0 a=0 l=0 'Police Trousers' #Apparel
+32 value=10 weight=0.1 s=0 p=1 e=0 c=-1 i=1 a=0 l=0 'Prescription Glasses' #Apparel #Head
+33 value=10 weight=0.1 s=0 p=-1 e=0 c=1 i=0 a=0 l=0 'Sunglasses' #Apparel #Head
+34 value=20 weight=0.1 s=0 p=1 e=0 c=1 i=0 a=0 l=0 'Prescription Sunglasses' #Apparel #Head
+35 value=10 weight=0.4 s=0 p=0 e=0 c=0 i=0 a=2 l=0 'Baseball Cap' #Apparel #Head
+36 value=10 weight=0.4 s=0 p=0 e=0 c=-1 i=0 a=2 l=0 'Baseball Cap (Backwards)' #Apparel #Head
+37 value=10 weight=0.4 s=0 p=0 e=0 c=3 i=0 a=-1 l=0 'Fedora' #Apparel #Head
+38 value=10 weight=0.4 s=2 p=0 e=0 c=-1 i=0 a=0 l=0 'Bandana' #Apparel #Head
+39 value=10 weight=0.4 s=0 p=0 e=0 c=5 i=0 a=0 l=1 'Police Cap' #Apparel #Head
+40 value=15 weight=4 s=0 p=0 e=2 c=0 i=0 a=0 l=0 'Cotton Padded Vest' #Apparel #Torso
+41 value=30 weight=8 s=0 p=0 e=4 c=0 i=0 a=0 l=0 'Silk Padded Vest' #Apparel #Torso
+42 value=50 weight=12 s=0 p=0 e=6 c=0 i=0 a=0 l=0 'Metal Lined Waistcoat' #Apparel #Torso
+43 value=60 weight=16 s=0 p=0 e=8 c=0 i=0 a=0 l=0 'Metal Lined Jacket' #Apparel #Torso
+44 value=150 weight=20 s=0 p=0 e=10 c=0 i=0 a=0 l=0 'Police Issue Body Armor' #Apparel #Torso
+45 value=200 weight=24 s=0 p=0 e=12 c=0 i=0 a=0 l=0 'Government Issue Body Armor' #Apparel #Torso
+46 value=300 weight=28 s=0 p=0 e=14 c=0 i=0 a=0 l=0 'Military Issue Armor' #Apparel #Torso
+47 value=10 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Shirt' #Apparel #Torso
+48 value=10 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Shirt' #Apparel #Torso
+49 value=120 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Jacket' #Apparel #Torso
+50 value=8 weight=1 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Casual Pants' #Apparel #Legs
+51 value=90 weight=1 s=0 p=0 e=0 c=2 i=0 a=0 l=0 'Dress Pants' #Apparel #Legs
+52 value=90 weight=1 s=0 p=0 e=0 c=5 i=0 a=0 l=0 'Fancy Suit Pants' #Apparel #Legs
+53 value=40 weight=1.5 s=0 p=0 e=3 c=0 i=0 a=0 l=0 'Police Trousers' #Apparel #Legs
