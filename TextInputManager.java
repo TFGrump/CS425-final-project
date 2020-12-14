@@ -16,13 +16,17 @@ public class TextInputManager {
    // Check if input is in array of valid inputs
    // If it's not, notify user
    public static void prompt() {
+      boolean somethingWasValid = false;
       //Main.print("Enter Command:"); // Prompt the user
       String input = scanner.nextLine(); // Input
       if (input.equalsIgnoreCase("help")) help();
       else 
          for (Command command: commands)  // Checks if input is valid
-            if (command.isTrigger(input)) 
+            if (command.isTrigger(input)) {
                command.execute();
+               somethingWasValid = true;
+            }
+      if (!somethingWasValid) System.out.println("\"" + input + "\" is not a valid command! Type \"help\" to see a list of valid ones!");
    }
    
    private static void help() {
