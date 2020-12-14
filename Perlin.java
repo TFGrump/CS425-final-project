@@ -7,6 +7,23 @@ public class Perlin {
    int pWidth, pHeight;
    int width, height;
    double cell_w, cell_h;
+   
+   public Perlin(int pWidth, int pHeight, int width, int height) {
+	      this.pWidth = pWidth;
+	      this.pHeight = pHeight;
+	      this.width = width;
+	      this.height = height;
+		   this.cell_w = width / (double)(pWidth - 1); // The width of a cell
+		   this.cell_h = height / (double)(pHeight - 1); // The height of a cell
+	      
+	      vGrid = new Vector[pWidth][pHeight];
+	      ran = new Random();
+	      for (int i = 0; i < pWidth; i++) {
+	         for (int j = 0; j < pHeight; j++) {
+	            vGrid[i][j] = getRandomVector(2);
+	         }
+	      }
+   }
 
    public Perlin(int pWidth, int pHeight, int width, int height, long seed) {
       this.pWidth = pWidth;

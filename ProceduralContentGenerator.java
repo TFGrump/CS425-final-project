@@ -32,8 +32,8 @@ public class ProceduralContentGenerator {
    
    // TODO: Remove this, generate random seed in the world file or main menu even
    public ProceduralContentGenerator() {
-      seed = System.currentTimeMillis();
-      ran = new Random(seed);
+      this.seed = System.currentTimeMillis();
+      ran = new Random(this.seed);
    }
    
    public ProceduralContentGenerator(long seed) {
