@@ -50,7 +50,7 @@ public abstract class Person {
       switch (c) {
          case 's': strength++; break;
          case 'p': perception++; break;
-         case 'e': endurance++; maxHp += 5; break;
+         case 'e': endurance++; maxHp += 5; hp = maxHp; break;
          case 'c': charisma++; break;
          case 'i': intelligence++; break;
          case 'a': agility++; break;
