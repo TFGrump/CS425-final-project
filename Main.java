@@ -20,6 +20,9 @@ public class Main {
       TextInputManager.addCommand(new CommandEnterLocation(world, world.player));
       TextInputManager.addCommand(new CommandAttack(world, world.player));
       TextInputManager.addCommand(new CommandExamine(world, world.player));
+      TextInputManager.addCommand(new CommandMap(world, world.player));
+      TextInputManager.addCommand(new CommandTileInfo(world, world.player));
+      TextInputManager.addCommand(new CommandLocationInfo(world.player));
       world.start();
    }
    

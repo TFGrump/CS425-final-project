@@ -42,6 +42,7 @@ public abstract class Person {
       this.dead = false;
       friends = new ArrayList<Person>();
       rivals = new ArrayList<Person>();
+      this.inventory = new ArrayList<GameItem>();
       this.money = 0;
    }
    

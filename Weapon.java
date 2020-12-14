@@ -21,7 +21,7 @@ public class Weapon extends GameItem {
    }
    
    public Weapon(String rawData) {
-     super(rawData); // Super constructor handles name, value, and weight
+      super(rawData); // Super constructor handles name, value, and weight
       
       // Read Stats
       String[] stats = rawData.split(" ");

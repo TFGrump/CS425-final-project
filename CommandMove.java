@@ -52,21 +52,13 @@ public class CommandMove extends Command {
       if (lastX != player.x || lastY != player.y) {
          System.out.println("Entering neighborhood:");
          System.out.println(world.map[player.x][player.y]);
-         
-         for (int x = 0; x < world.width; x++) {
-            System.out.println();
-            for (int y = 0; y < world.height; y++) {
-               if (x == player.x && y == player.y) System.out.print("[x]");
-               else System.out.print("[" + world.map[x][y].difficulty + "] ");
-            }
-         }
       }
    }
    
    // Print out one line of help to the user
    public void printOneLineHelp() {
       if (player.isInCombat) return;
-      System.out.println("Move [North/East/South/West] -- Move around the world");
+      System.out.println("[Move] [North/East/South/West] -- Move around the world");
    }
    
    // Print out a more detailed help menu

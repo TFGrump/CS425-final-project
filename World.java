@@ -35,7 +35,9 @@ public class World {
             this.map[i][j] = pcg.genTile((perlinValue + 1) / 2.0);
          }
       }
-      this.player = new Player("John", "Wick", 48, true); // Create player
+      player = new Player("John", "Wick", 48, true); // Create player
+      pcg.applyLevelUps(player, 100); // OP lol
+      pcg.equipRandomFromPool(player, "equipment_spawn_pools/gang_equip_pool");
    }
    
    // Load world from file

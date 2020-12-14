@@ -168,7 +168,7 @@ public class ProceduralContentGenerator {
       return loc;
    }
    
-   private void equipRandomFromPool(Person person, String pool_filename) {
+   public void equipRandomFromPool(Person person, String pool_filename) {
       Scanner reader = null;
       try {
          File file = new File(DIR_NAME + "/" + pool_filename + ".txt"); // File object
@@ -221,7 +221,7 @@ public class ProceduralContentGenerator {
       return null;
    }
    
-   private void applyLevelUps(Person person, int levels) {
+   public void applyLevelUps(Person person, int levels) {
       for (int i = 0; i < levels; i++) {
          switch(ran.nextInt(7)) {
             case 0: person.levelUp('s'); break;

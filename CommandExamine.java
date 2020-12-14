@@ -33,7 +33,7 @@ public class CommandExamine extends Command {
    // Print out one line of help to the user
    public void printOneLineHelp() {
       if (player.isInCombat) return;
-      System.out.println("[Attack] [\"Name of person in double quotes\"] -- Engage in combat with person and any nearby allies");
+      System.out.println("[Examine] [\"Name of person in double quotes\"] -- Print stats and items of a nearby person");
    }
    
    // Print out a more detailed help menu
