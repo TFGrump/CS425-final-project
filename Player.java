@@ -17,9 +17,13 @@ public class Player extends Person {
    }
    
    public void pingQuestCompletion() {
-      for (Quest quest: questlog) {
-         if (quest.isComplete()) quest.finish();
-      }
+      ArrayList<Quest> done = new ArrayList<>();
+        for (Quest quest: questlog) {
+            if (quest.isComplete()) { done.add(quest); quest.finish(); }
+        }
+        for(Quest quest: done) {
+            questlog.remove(quest);
+        }
    }
 
    public String getType() {
