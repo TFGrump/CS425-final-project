@@ -50,7 +50,7 @@ public class Weapon extends GameItem {
         return returnNum;
     }
 
-    public void reload() { System.out.println("Reloading weapon"); mag = maxMag; }
+    public void reload() { mag = maxMag; }
 
     public String getBriefDetails() {
         return name + " - "

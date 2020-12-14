@@ -62,10 +62,14 @@ public class Combat
       {
          // Removes Person from the team
          Person[] newTeam = new Person[team.length-1];
+         int i = 0;
          for(Person dude: team)
          {
             if(dude == person) 
                continue;
+        	newTeam[i] = dude;
+        	i++;
+        	
          }
          team = newTeam;
          return person;
@@ -225,10 +229,10 @@ public class Combat
       }
    
       if(damage == 0) {
-    	  System.out.println(gangster + " missed their attack on " + target + ".");
+    	  System.out.println(gangster.getFirstName() + " missed their attack on " + target.getFirstName() + ".");
       }
       else if(damage == -1) {
-    	  System.out.println(gangster + " reloaded their weapon.");
+    	  System.out.println(gangster.getFirstName() + " reloaded their weapon.");
       }
       else {
           target.takeDamage(damage);
