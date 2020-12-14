@@ -33,8 +33,7 @@ public class CommandCreateWorld extends Command {
    public void execute() {
       if (randomSeed) System.out.println("Generating world of dimensions (" + width + " x " + height + ") with random seed...");
       else System.out.println("Generating world of dimensions (" + width + " x " + height + ") with seed (" + seed + ")...");
-      
-      Main.world = new World((randomSeed ? (long)Math.random() : seed), width, height);
+      Main.world = new World((randomSeed ? System.currentTimeMillis() : seed), width, height);
       // TODO: Instantiate world object here, and save it to a file, then also print out name to user
    }
    
