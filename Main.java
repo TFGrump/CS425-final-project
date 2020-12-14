@@ -23,6 +23,10 @@ public class Main {
       TextInputManager.addCommand(new CommandMap(world, world.player));
       TextInputManager.addCommand(new CommandTileInfo(world, world.player));
       TextInputManager.addCommand(new CommandLocationInfo(world.player));
+      TextInputManager.addCommand(new CommandGetKillQuest(world, world.player));
+      TextInputManager.addCommand(new CommandQuestlog(world.player));
+      TextInputManager.addCommand(new CommandInventory(world.player));
+      TextInputManager.addCommand(new CommandCharacter(world.player));
       world.start();
    }
    

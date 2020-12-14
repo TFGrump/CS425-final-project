@@ -49,7 +49,7 @@ public class GameItemManager
          File file = new File(DIR_NAME + "/" + ITEM_FILE + ".txt"); // File object
          reader = new Scanner(file); // Scanner opens file
       
-         while (reader.hasNextLine() && id != getID(line)) line = reader.nextLine();
+         while (reader.hasNextLine() && (line == null || id != getID(line))) line = reader.nextLine();
          reader.close();
       } catch (FileNotFoundException e) {}
       if (line == null) System.out.println("ERROR: No item with ID of (" + id + ") found");

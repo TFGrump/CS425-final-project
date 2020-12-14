@@ -16,7 +16,7 @@ public class TextInputManager {
    // Check if input is in array of valid inputs
    // If it's not, notify user
    public static void prompt() {
-      Main.print("Enter Command:"); // Prompt the user
+      //Main.print("Enter Command:"); // Prompt the user
       String input = scanner.nextLine(); // Input
       if (input.equalsIgnoreCase("help")) help();
       else 

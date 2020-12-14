@@ -15,6 +15,12 @@ public class Player extends Person {
       isInCombat = false;
       questlog = new ArrayList<Quest>();
    }
+   
+   public void pingQuestCompletion() {
+      for (Quest quest: questlog) {
+         if (quest.isComplete()) quest.finish();
+      }
+   }
 
    public String getType() {
       return "player";

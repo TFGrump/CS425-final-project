@@ -50,11 +50,13 @@ public class CommandAttack extends Command {
       TextInputManager.addCommand(cmd1);
       TextInputManager.addCommand(cmd2);
       TextInputManager.addCommand(cmd3);
+      player.isInCombat = true;
       combat.startCombat();
+      player.isInCombat = false;
       TextInputManager.removeCommand(cmd1);
       TextInputManager.removeCommand(cmd2);
       TextInputManager.removeCommand(cmd3);
-      
+      player.pingQuestCompletion();
    }
    
    // Print out one line of help to the user

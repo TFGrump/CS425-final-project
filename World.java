@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class World {
 
    private ProceduralContentGenerator pcg;
@@ -37,7 +39,7 @@ public class World {
       }
       player = new Player("John", "Wick", 48, true); // Create player
       pcg.applyLevelUps(player, 100); // OP lol
-      pcg.equipRandomFromPool(player, "equipment_spawn_pools/gang_equip_pool");
+      pcg.equipRandomFromPool(player, "equipment_spawn_pools/player_equip_pool");
    }
    
    // Load world from file
@@ -59,7 +61,21 @@ public class World {
       while (true) {
          TextInputManager.prompt();
       }
-      
+   }
+   
+   public Person getRandomPerson() {
+      Random ran = new Random();
+      MapTile randomTile = map[ran.nextInt(width)][ran.nextInt(height)];
+      Building ranLoc = randomTile.getBuildings().get(ran.nextInt(randomTile.getBuildings().size()));
+      Person ranPerson = ranLoc.getOccupants().get(ran.nextInt(ranLoc.getOccupants().size()));
+      return ranPerson;
+   }
+   
+   public Person getRandomPersonInTile(MapTile tile) {
+      Random ran = new Random();
+      Building ranLoc = tile.getBuildings().get(ran.nextInt(tile.getBuildings().size()));
+      Person ranPerson = ranLoc.getOccupants().get(ran.nextInt(ranLoc.getOccupants().size()));
+      return ranPerson;
    }
    
    public static void main(String[] args) {

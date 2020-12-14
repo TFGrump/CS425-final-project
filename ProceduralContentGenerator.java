@@ -137,7 +137,7 @@ public class ProceduralContentGenerator {
    
    public GangLocation genGangLocation(double diff) {
       GangLocation loc = new GangLocation(getLineFromFile(GANG_LOC_NAMES));
-      int amountOfGangMembers = ran.nextInt(((int)(diff * 8))+1);
+      int amountOfGangMembers = ran.nextInt(((int)(diff * 8))+1) + 1;
       for (int i = 0; i < amountOfGangMembers; i++) loc.addOccupant(genGangster(diff));
       return loc;
    }
@@ -163,7 +163,7 @@ public class ProceduralContentGenerator {
    
    public CopLocation genCopLocation(double diff, String name) {
       CopLocation loc = new CopLocation(name);
-      int amountOfCops = ran.nextInt(((int)(diff * 10))+1);
+      int amountOfCops = ran.nextInt(((int)(diff * 10))+1)+1;
       for (int i = 0; i < amountOfCops; i++) loc.addOccupant(genCop(diff));
       return loc;
    }

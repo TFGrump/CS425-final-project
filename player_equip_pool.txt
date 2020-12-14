@@ -1,0 +1,4 @@
+Weapon: 0
+Head: 1
+Torso: 1
+Legs: 1
