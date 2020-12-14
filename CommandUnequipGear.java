@@ -19,10 +19,30 @@ public class CommandUnequipGear extends Command
 
     public void execute() {
         switch(tokens[1].toLowerCase()){
-            case "weapon": player.equipWeapon((Weapon)GameItemManager.getNewItem(0)); break;
-            case "head": player.equipHead((Apparel)GameItemManager.getNewItem(1)); break;
-            case "torso": player.equipTorso((Apparel)GameItemManager.getNewItem(1)); break;
-            case "legs": player.equipLegs((Apparel)GameItemManager.getNewItem(1)); break;
+            case "weapon": 
+                if(player.getEquippedWeapon().getID() != 0) {
+                    player.addToInventory(player.getEquippedWeapon());    
+                    player.equipWeapon((Weapon)GameItemManager.getNewItem(0));
+                }
+                break;
+            case "head":
+                if(player.getEquippedWeapon().getID() != 1) {
+                    player.addToInventory(player.getEquippedHead());
+                    player.equipHead((Apparel)GameItemManager.getNewItem(1)); 
+                }
+                break;
+            case "torso": 
+                if(player.getEquippedWeapon().getID() != 1) {
+                    player.addToInventory(player.getEquippedTorso());
+                    player.equipTorso((Apparel)GameItemManager.getNewItem(1)); 
+                }
+                break;
+            case "legs": 
+                if(player.getEquippedWeapon().getID() != 1) {
+                    player.addToInventory(player.getEquippedLegs());
+                    player.equipLegs((Apparel)GameItemManager.getNewItem(1));
+                }
+            break;
         }            
     }
 
