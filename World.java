@@ -11,8 +11,8 @@ public class World {
    int width = 10, height = 10;
    
    public World(int width, int height) {
-	  this.width = width;
-	  this.height = height;
+      this.width = width;
+      this.height = height;
       pcg = new ProceduralContentGenerator();
       perlin = new Perlin(3, 3, width, height);
       generate(width, height);
