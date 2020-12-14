@@ -62,14 +62,10 @@ public class Combat
       {
          // Removes Person from the team
          Person[] newTeam = new Person[team.length-1];
-         int i = 0;
          for(Person dude: team)
          {
             if(dude == person) 
                continue;
-        	newTeam[i] = dude;
-        	i++;
-        	
          }
          team = newTeam;
          return person;
@@ -141,7 +137,6 @@ public class Combat
       do {
          for(Team team: teamAttackOrder) {
             for(Person person: team.getTeam()) {
-               if(teamOne.length() == 0 || teamTwo.length() == 0) break;
                turn(person, team.isTeamOne());
             }
          }
@@ -187,7 +182,7 @@ public class Combat
    }
 
    /*
-    * The AI will attack the opponent with the most endurance + strength since 
+    * The AI will attack a random opponent since 
     * we do not have behavior trees for the AI to act upon.
     * 
     * @param   The Gangster that is randomly attacking
@@ -196,48 +191,10 @@ public class Combat
    {
       // The AI does attack stuff
       int damage = calcDamage(gangster);
-      Person target = null;
-      if(team) {
-    	  
-    	  int maxThreat = Integer.MIN_VALUE;
-    	  
-    	  for(int i = 0; i < teamTwo.length(); i++) {
-    		  
-    		  int threat = teamTwo.personAt(i).getBaseEnd() + teamTwo.personAt(i).getModEnd() + teamTwo.personAt(i).getBaseStr() + teamTwo.personAt(i).getModStr();
-    		  if(maxThreat < threat) {
-    			  maxThreat = threat;
-    	    	  target = teamTwo.personAt(i);
-    		  }
-    		  
-    	  }
-    	  
-      }
-      else {
-    	  
-    	  int maxThreat = Integer.MIN_VALUE;
-    	  
-    	  for(int i = 0; i < teamOne.length(); i++) {
-    		  
-    		  int threat = teamOne.personAt(i).getBaseEnd() + teamOne.personAt(i).getModEnd() + teamOne.personAt(i).getBaseStr() + teamOne.personAt(i).getModStr();
-    		  if(maxThreat < threat) {
-    			  maxThreat = threat;
-    	    	  target = teamOne.personAt(i);
-    		  }
-    		  
-    	  }
-    	  
-      }
+      Person target = team ? teamTwo.personAt((int)(Math.random()*teamTwo.length())) : teamOne.personAt((int)(Math.random()*teamOne.length()));
    
-      if(damage == 0) {
-    	  System.out.println(gangster.getFirstName() + " missed their attack on " + target.getFirstName() + ".");
-      }
-      else if(damage == -1) {
-    	  System.out.println(gangster.getFirstName() + " reloaded their weapon.");
-      }
-      else {
-          target.takeDamage(damage);
-    	  logAttack(gangster, target, damage);
-      }
+      target.takeDamage(damage);
+      logAttack(gangster, target, damage);
       if(target.isDead())
       {
          logDeath(target);
@@ -281,10 +238,7 @@ public class Combat
                 if ((int)(20*Math.random()) < luckThreshold) damage *= 2;
                 totalDamage += damage;
             }
-        } else {
-        	weapon.reload();
-        	totalDamage = -1;
-        }
+        } else weapon.reload();
         return totalDamage;
     }
 
