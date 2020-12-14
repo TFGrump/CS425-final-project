@@ -183,7 +183,7 @@ public class Combat
    }
 
    /*
-    * The AI will attack a random opponent since 
+    * The AI will attack the opponent with the most endurance + strength since 
     * we do not have behavior trees for the AI to act upon.
     * 
     * @param   The Gangster that is randomly attacking
@@ -192,10 +192,48 @@ public class Combat
    {
       // The AI does attack stuff
       int damage = calcDamage(gangster);
-      Person target = team ? teamTwo.personAt((int)(Math.random()*teamTwo.length())) : teamOne.personAt((int)(Math.random()*teamOne.length()));
+      Person target = null;
+      if(team) {
+    	  
+    	  int maxThreat = Integer.MIN_VALUE;
+    	  
+    	  for(int i = 0; i < teamTwo.length(); i++) {
+    		  
+    		  int threat = teamTwo.personAt(i).getBaseEnd() + teamTwo.personAt(i).getModEnd() + teamTwo.personAt(i).getBaseStr() + teamTwo.personAt(i).getModStr();
+    		  if(maxThreat < threat) {
+    			  maxThreat = threat;
+    	    	  target = teamTwo.personAt(i);
+    		  }
+    		  
+    	  }
+    	  
+      }
+      else {
+    	  
+    	  int maxThreat = Integer.MIN_VALUE;
+    	  
+    	  for(int i = 0; i < teamOne.length(); i++) {
+    		  
+    		  int threat = teamOne.personAt(i).getBaseEnd() + teamOne.personAt(i).getModEnd() + teamOne.personAt(i).getBaseStr() + teamOne.personAt(i).getModStr();
+    		  if(maxThreat < threat) {
+    			  maxThreat = threat;
+    	    	  target = teamOne.personAt(i);
+    		  }
+    		  
+    	  }
+    	  
+      }
    
-      target.takeDamage(damage);
-      logAttack(gangster, target, damage);
+      if(damage == 0) {
+    	  System.out.println(gangster + " missed their attack on " + target + ".");
+      }
+      else if(damage == -1) {
+    	  System.out.println(gangster + " reloaded their weapon.");
+      }
+      else {
+          target.takeDamage(damage);
+    	  logAttack(gangster, target, damage);
+      }
       if(target.isDead())
       {
          logDeath(target);
@@ -239,7 +277,10 @@ public class Combat
                 if ((int)(20*Math.random()) < luckThreshold) damage *= 2;
                 totalDamage += damage;
             }
-        } else weapon.reload();
+        } else {
+        	weapon.reload();
+        	totalDamage = -1;
+        }
         return totalDamage;
     }
 
