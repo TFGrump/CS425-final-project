@@ -34,6 +34,29 @@ public class GameItemManager
       return item;
    }
    
+   static boolean hasTag(String tag, String line) {
+      String[] tags = getTags(line);
+      for (int i = 0; i < tags.length; i++)
+         if (tags[i].equals(tag)) 
+            return true;
+      return false;
+   }
+   
+   static boolean hasTag(int id, String tag) {
+      Scanner reader = null;
+      String line = null;
+      try {
+         File file = new File(DIR_NAME + "/" + ITEM_FILE + ".txt"); // File object
+         reader = new Scanner(file); // Scanner opens file
+      
+         while (reader.hasNextLine() && id != getID(line)) line = reader.nextLine();
+         reader.close();
+      } catch (FileNotFoundException e) {}
+      if (line == null) System.out.println("ERROR: No item with ID of (" + id + ") found");
+      if (reader != null) reader.close();
+      return hasTag(tag, line);
+   }
+   
    private static String getName(String line) {
       String[] tokens = line.split("'");
       return tokens[1];
@@ -56,13 +79,7 @@ public class GameItemManager
       return tags;
    }
    
-   private static boolean hasTag(String tag, String line) {
-      String[] tags = getTags(line);
-      for (int i = 0; i < tags.length; i++)
-         if (tags[i].equals(tag)) 
-            return true;
-      return false;
-   }
+
    
    private static int getValue(String line) {
       return Integer.parseInt(line.split(" ")[1]);
