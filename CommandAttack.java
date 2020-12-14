@@ -27,11 +27,11 @@ public class CommandAttack extends Command {
      Person target = null;
       for (Person person: player.location.getOccupants()) {
          if (name.equalsIgnoreCase(person.getFirstName()) || name.equalsIgnoreCase(person.getName())) {
-            target = person;
+            if (!person.isDead()) target = person;
          }
       }
       if (target == null) {
-         System.out.println("No person by name " + name + " in this location.");
+         System.out.println("No living person by name " + name + " in this location.");
          return;
       }
       

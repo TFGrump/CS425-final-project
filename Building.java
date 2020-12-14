@@ -25,7 +25,8 @@ public abstract class Building {
    public String toString() {
       String str = "========" + name + "========\n";
       for (Person person: occupants) {
-         str += person.getName() + " (" + person.getType() + ")\n";
+         if (person.isDead()) str += person.getName() + " (" + person.getType() + ") [DEAD]\n";
+         else str += person.getName() + " (" + person.getType() + ")\n";
       }
       return str;
    }
