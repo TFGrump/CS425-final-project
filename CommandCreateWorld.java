@@ -21,7 +21,6 @@ public class CommandCreateWorld extends Command {
             height = Integer.parseInt(tokens[3]);
             
             if (tokens.length == 5) {
-               System.out.println(tokens[4]);
                seed = Integer.parseInt(tokens[4]);
                randomSeed = false;
             }
