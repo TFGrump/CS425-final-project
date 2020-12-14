@@ -14,7 +14,7 @@ public class CommandCreateWorld extends Command {
          if (tokens[1].equalsIgnoreCase("world")) {
             
             if (tokens.length < 4) {
-               System.out.println("Correct usage: [new/create] world [width] [height] (seed)");
+               System.out.println("Correct usage: [new/create] world [width] [height] (seed); the bigger the more time it will take to create try 10 x 10 ~ 50 x 50");
                return false;
             }
             width = Integer.parseInt(tokens[2]);
