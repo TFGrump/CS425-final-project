@@ -26,4 +26,19 @@ public abstract class GameItem {
    
    public abstract String getBriefDetails();
    public abstract String getDetails();
+   
+
+   @Override
+   public boolean equals(Object item) {
+   
+	   if(item != null && item instanceof GameItem) {
+
+		   return this.name == ((GameItem)item).getName();
+		   
+	   }
+	   
+	   return false;
+   	
+   }
+   
 }
