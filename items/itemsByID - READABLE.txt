@@ -2,41 +2,41 @@
 0 value=0 weight=0 damage=1 acc=0.7 firerate=1 mag=1 range=5 'Rock' #Weapon
 1 value=0 weight=0 s=0 p=0 e=0 c=0 i=0 a=0 l=0 'Nothing' #Apparel
 ===========Pistols==========
-2 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt Police Positive Special' #Weapon
-3 value=0 weight=0 damage=10 acc=0.55 firerate=1 mag=5 range=30 'Smith & Wesson Model 1 ½' #Weapon
-4 value=0 weight=0 damage=15 acc=0.50 firerate=1 mag=7 range=50 'M1911 Pistol' #Weapon
-5 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Beretta Model 1915' #Weapon
-6 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Mauser C96' #Weapon
-7 value=0 weight=0 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt New Service' #Weapon
+2 value=10 weight=3 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt Police Positive Special' #Weapon
+3 value=10 weight=3 damage=10 acc=0.5 firerate=1 mag=5 range=30 'Smith & Wesson Model 1 1/2' #Weapon
+4 value=10 weight=3 damage=15 acc=0.5 firerate=1 mag=7 range=50 'M1911 Pistol' #Weapon
+5 value=10 weight=3 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Beretta Model 1915' #Weapon
+6 value=10 weight=3 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Mauser C96' #Weapon
+7 value=10 weight=3 damage=10 acc=0.5 firerate=1 mag=6 range=30 'Colt New Service' #Weapon
 ===========Shotguns=======================
-8 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Short-Barreled Shotgun' #Weapon
-9 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Remington Model 10' #Weapon
-10 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Browning Auto-5' #Weapon
-11 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Winchester Model 1912' #Weapon
-12 value=0 weight=0 damage=30 acc=0.3 firerate=1 mag=6 range=30 'Sjögren Shotgun' #Weapon
+8 value=15 weight=11 damage=15 acc=0.25 firerate=2 mag=2 range=10 'Short-Barreled Shotgun' #Weapon
+9 value=15 weight=11 damage=15 acc=0.3 firerate=1 mag=6 range=10 'Remington Model 10' #Weapon
+10 value=15 weight=11 damage=15 acc=0.3 firerate=1 mag=6 range=10 'Browning Auto-5' #Weapon
+11 value=15 weight=11 damage=15 acc=0.3 firerate=1 mag=6 range=10 'Winchester Model 1912' #Weapon
+12 value=15 weight=11 damage=30 acc=0.25 firerate=1 mag=2 range=10 'Sjogren Shotgun' #Weapon
 ===========Sub-machine guns===============
-13 value=20 weight=9 damage=2 acc=0.5 firerate=5 mag=40 range=20 'M1921 Thompson' #Weapon
-14 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Tommy Gun' #Weapon
-15 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'OVP 1918' #Weapon
-16 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'MP 18 Submachine Gun' #Weapon
-17 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Beretta M1918' #Weapon
+13 value=20 weight=9 damage=2 acc=0.5 firerate=5 mag=30 range=20 'M1921 Thompson' #Weapon
+14 value=20 weight=9 damage=1.5 acc=0.5 firerate=10 mag=30 range=20 'Tommy Gun' #Weapon
+15 value=20 weight=9 damage=2 acc=0.75 firerate=4 mag=30 range=20 'OVP 1918' #Weapon
+16 value=20 weight=9 damage=1 acc=0.9 firerate=5 mag=30 range=20 'MP 18 Submachine Gun' #Weapon
+17 value=20 weight=9 damage=3 acc=0.35 firerate=5 mag=20 range=20 'Beretta M1918' #Weapon
 ===========Machine guns===================
-18 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'BAR M1918' #Weapon
-19 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Chauchat Machine Gun' #Weapon
-20 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Lewis Gun' #Weapon
-21 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Madsen Machine Gun' #Weapon
+18 value=30 weight=20 damage=5 acc=0.5 firerate=5 mag=50 range=30 'BAR M1918' #Weapon
+19 value=30 weight=20 damage=6 acc=0.5 firerate=5 mag=50 range=30 'Chauchat Machine Gun' #Weapon
+20 value=30 weight=20 damage=4 acc=0.5 firerate=10 mag=50 range=30 'Lewis Gun' #Weapon
+21 value=30 weight=20 damage=3 acc=0.90 firerate=5 mag=50 range=30 'Madsen Machine Gun' #Weapon
 ===========Rifles=========================
-22 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Savage Model 99' #Weapon
-23 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Rifle' #Weapon
-24 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Remington Model 8' #Weapon
-25 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Gewehr 98' #Weapon
+22 value=25 weight=12 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Savage Model 99' #Weapon
+23 value=25 weight=12 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Rifle' #Weapon
+24 value=25 weight=12 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Remington Model 8' #Weapon
+25 value=25 weight=12 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Gewehr 98' #Weapon
 ===========Sniper Rifles==================
-26 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'M1903 Springfield' #Weapon
-27 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'M1917 Enfield' #Weapon
-28 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Lee-Enfield SMLE' #Weapon
-29 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Scoped Savage Model 99' #Weapon
-30 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Model 1895 Scoped Rifle' #Weapon
-31 value=0 weight=0 damage=10 acc=0.7 firerate=1 mag=6 range=30 'Mosin–Nagant' #Weapon
+26 value=50 weight=20 damage=10 acc=0.75 firerate=3 mag=12 range=30 'M1903 Springfield' #Weapon
+27 value=50 weight=20 damage=30 acc=0.25 firerate=1 mag=6 range=30 'M1917 Enfield' #Weapon
+28 value=50 weight=20 damage=25 acc=0.5 firerate=1 mag=6 range=30 'Lee-Enfield SMLE' #Weapon
+29 value=50 weight=20 damage=20 acc=0.8 firerate=1 mag=6 range=30 'Scoped Savage Model 99' #Weapon
+30 value=50 weight=20 damage=20 acc=0.8 firerate=1 mag=4 range=30 'Model 1895 Scoped Rifle' #Weapon
+31 value=50 weight=20 damage=20 acc=0.25 firerate=2 mag=6 range=30 'Mosin–Nagant' #Weapon
 ===========Head Apparel===================
 32 value=10 weight=0.1 s=0 p=1 e=0 c=-1 i=1 a=0 l=0 'Prescription Glasses' #Apparel #Head
 33 value=10 weight=0.1 s=0 p=-1 e=0 c=1 i=0 a=0 l=0 'Sunglasses' #Apparel #Head
